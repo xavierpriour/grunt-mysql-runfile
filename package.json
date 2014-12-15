@@ -1,0 +1,45 @@
+{
+  "name": "grunt-mysql-runfile",
+  "version": "0.0.1",
+  "description": "Runs the given sql files on the mysql database.",
+  "homepage": "https://github.com/Hiiragisan09/grunt-mysql-runfile",
+  "author": {
+    "name": "Martyn de Vries"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Hiiragisan09/grunt-mysql-runfile.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hiiragisan09/grunt-mysql-runfile/issues"
+  },
+  "license": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/Hiiragisan09/grunt-mysql-runfile/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "glob": "~4.3.1",
+    "grunt": "~0.4.5",
+    "lodash": "~2.4.1",
+    "mysql": "~2.3.2",
+    "wrench": "~1.5.8"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-jshint": "~0.10.0"
+  },
+  "keywords": [
+    "mysql",
+    "grunt",
+    "gruntplugin"
+  ]
+}
