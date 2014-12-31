@@ -10,7 +10,13 @@ module.exports = function(grunt) {
 
 		mysqlrunfile : {
 			options : {
-				db: 'mysql://test:test@localhost/test'
+				connection: {
+					host: 'localhost',
+					user: 'mysqlrunfiletest',
+					password: 'mysqlrunfiletest',
+					database: 'mysqlrunfiletest',
+					multipleStatements: true
+				}
 			},
 			runfiles1 : {
 				src: 'test/files1/**/*.sql'
