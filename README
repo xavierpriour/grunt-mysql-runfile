@@ -1,1 +1,4 @@
+Grunt MYSQL Runfile
+=============
 
+Runs the given sql files on the mysql database.
