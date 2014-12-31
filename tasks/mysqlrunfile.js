@@ -1,35 +1,69 @@
 'use strict';
 
-var _ = require('lodash'),
-	fileutils = require('./lib/fileutils');
+var Q = require('Q'),
+	_ = require('lodash'),
+	fs = require('fs');
 
 module.exports = function(grunt) {
 
 	grunt.registerMultiTask('mysqlrunfile', 'Runs given sql files.', function() {
 
-		var drivers = ['simulation', 'mysql'];
+		var drivers = ['mysql'];
+		var db = null;
+		var done = this.async();
+		var self = this;
 
 		var options = this.options({
-			driver: 'simulation',
-			db: null,
 			connection: {
 				host: 'localhost',
 				user: '',
 				password: '',
-				database: 'mysqlrftest'
+				database: '',
+				multipleStatements: true
 			}
 		});
 
-		if(!_.contains(drivers, options.driver))
-		{
-			grunt.log.error('Invalid driver. Supported values are: ', grunt.log.wordlist(drivers));
-			return false;
-		}
+		grunt.verbose.writeln('Loading driver ' + 'mysql');
+		db = require('./lib/mysql').init(grunt, options);
 
-		grunt.verbose.writeln('Loading driver ' + options.driver);
-		var connection = require('./lib/' + options.driver).init(grunt, options);
+		db.connect()
+		.then(function() {
+			console.log('connection succeeded');
 
+			var promise_chain = Q.fcall(function(){});
 
-		
+			grunt.log.subhead('Run:');
+
+			self.filesSrc.forEach(function(file) {
+
+				var promise_link = function() {
+					var deferred = Q.defer();
+
+					grunt.log.writeln(file);
+
+					var content = fs.readFileSync(file, 'utf8');
+					db.query(content).then(function() {
+						deferred.resolve();
+					});
+
+					return deferred.promise;
+				};
+
+				// add the link onto the chain
+				promise_chain = promise_chain.then(promise_link);
+			});
+
+			return promise_chain;
+		})
+		.then(function() {
+			grunt.log.ok('Sql query files succeeded');
+		})
+		.catch(function() {
+			grunt.log.error('Sql query files failed.');
+		})
+		.finally(function() {
+			done();
+		});
+
 	});
 };
