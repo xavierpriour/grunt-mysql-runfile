@@ -34,13 +34,13 @@ grunt.initConfig({
 				multipleStatements: true
 			},
 			yourtarget1: {
-				src: ['databasefiles/**/*']
+				src: ['test/files1/**/*']
 			},
 			yourtarget2: {
-				src: ['file1.sql', 'file2.sql']
-			}
+				src: 'test/files2/01 - files2.sql'
+			},
 			yourtarget3: {
-				src: 'file3.sql'
+				src: ['test/files2/02 - files2.sql', 'test/files2/01 - files2.sql']
 			}
 		}
 	}
@@ -62,6 +62,8 @@ Needs to be true if you want to run sql files with multiple statements.
 Type: `String` or `String[]`
 
 The location of the files to run on the sql server. You can give full filenames or use glob patterns to select the files you want to run.
+
+It runs the files in alphabetical order.
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).

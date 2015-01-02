@@ -13,7 +13,4 @@ build:
     - npm-install
 
     # Runs grunt
-    - grunt:
-        tasks: test
-
-# Deployment definition
+    - grunt
