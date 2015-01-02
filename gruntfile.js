@@ -22,10 +22,7 @@ module.exports = function(grunt) {
 				src: 'test/files1/**/*.sql'
 			},
 			runfiles2 : {
-				src: ['test/files2/**/*.sql', 'test/files22/**/*.sql']
-			},
-			runfiles3 : {
-				src: ['test/files3/**/*.sql']
+				src: ['test/files2/**/*.sql', 'test/files3/**/*.sql']
 			}
 		}
 	});

@@ -1,6 +1,6 @@
 'use strict';
 
-var Q = require('Q'),
+var Q = require('q'),
 	fs = require('fs'),
 	_ = require('lodash'),
 	mysql = require('mysql');
