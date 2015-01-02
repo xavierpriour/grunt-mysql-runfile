@@ -14,3 +14,9 @@ build:
 
     # Runs grunt
     - grunt
+
+    after-steps:
+    - kobim/notify-pushover:
+        token: $PUSHOVER_APP_TOKEN
+        user: $PUSHOVER_USER_TOKEN
+        title: Deployment Wercker Cave Server
