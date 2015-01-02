@@ -1,6 +1,12 @@
-Grunt MySQL Runfile [![wercker status](https://app.wercker.com/status/6db62fea29fa838dfe70e469a08ef84c/s "wercker status")](https://app.wercker.com/project/bykey/6db62fea29fa838dfe70e469a08ef84c) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)[![npm version](https://badge.fury.io/js/grunt-mysql-runfile.svg)](http://badge.fury.io/js/grunt-mysql-runfile)
+Grunt MySQL Runfile
 ===================
 > tool for executing sql files on mysql database
+
+[![wercker status](https://app.wercker.com/status/6db62fea29fa838dfe70e469a08ef84c/s "wercker status")](https://app.wercker.com/project/bykey/6db62fea29fa838dfe70e469a08ef84c)
+[![npm version](https://badge.fury.io/js/grunt-mysql-runfile.svg)](http://badge.fury.io/js/grunt-mysql-runfile)
+[![Dependency Status](https://david-dm.org/hiiragisan09/grunt-mysql-runfile.svg)](https://david-dm.org/hiiragisan09/grunt-mysql-runfile) 
+[![devDependency Status](https://david-dm.org/hiiragisan09/grunt-mysql-runfile/dev-status.svg)](https://david-dm.org/hiiragisan09/grunt-mysql-runfile#info=devDependencies)
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) 
 
 ## Getting Started
 This plugin requires Grunt '~0.4.5'
@@ -78,3 +84,4 @@ Licensed under the MIT license.
 
 ## Author
 Martyn de Vries
+
