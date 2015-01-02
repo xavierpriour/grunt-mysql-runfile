@@ -1,0 +1,22 @@
+# Box definition
+box: wercker/nodejs
+
+# Service definition
+services:
+  - wercker/mysql
+
+# Build definition
+build:
+  # Build steps
+  steps:
+    # Runs npm install
+    - npm-install
+
+    # Runs grunt
+    - grunt
+
+  after-steps:
+    - kobim/notify-pushover:
+        token: $PUSHOVER_APP_TOKEN
+        user: $PUSHOVER_USER_TOKEN
+        title: Deployment Wercker Cave Server
