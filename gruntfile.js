@@ -48,7 +48,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 
-	grunt.registerTask('test', ['mysqlrunfile:runfiles1']);
+	grunt.registerTask('test', ['mysqlrunfile:yourtarget1']);
 
 	grunt.registerTask('default', ['jshint', 'test']);
 };
