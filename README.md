@@ -1,4 +1,4 @@
-Grunt MySQL Runfile [![wercker status](https://app.wercker.com/status/6db62fea29fa838dfe70e469a08ef84c/s "wercker status")](https://app.wercker.com/project/bykey/6db62fea29fa838dfe70e469a08ef84c) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+Grunt MySQL Runfile [![wercker status](https://app.wercker.com/status/6db62fea29fa838dfe70e469a08ef84c/s "wercker status")](https://app.wercker.com/project/bykey/6db62fea29fa838dfe70e469a08ef84c) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)[![npm version](https://badge.fury.io/js/grunt-mysql-runfile.svg)](http://badge.fury.io/js/grunt-mysql-runfile)
 ===================
 > tool for executing sql files on mysql database
 
