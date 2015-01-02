@@ -3,17 +3,17 @@ box: wercker/nodejs
 
 # Service definition
 services:
-	- wercker/mysql
+  - wercker/mysql
 
 # Build definition
 build:
-	# Build steps
-	steps:
-		# Runs npm install
-		- npm-install
+  # Build steps
+  steps:
+    # Runs npm install
+    - npm-install
 
-		# Runs grunt
-		- grunt:
-				tasks: test
+    # Runs grunt
+    - grunt:
+        tasks: test
 
 # Deployment definition
