@@ -19,7 +19,7 @@ exports.init = function(grunt, options)
 
 		connection.connect(function(err) {
 			if (err) {
-				grunt.fatal('Unable to connect to database server: ', err);
+				grunt.fatal('Unable to connect to database server: ' + err);
 
 				deferred.reject();
 				return;
