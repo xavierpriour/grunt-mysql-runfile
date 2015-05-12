@@ -26,17 +26,17 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "glob": "~4.3.1",
-    "grunt": "~0.4.5",
-    "lodash": "~2.4.1",
-    "mysql": "~2.3.2",
-    "q": "~1.1.2",
-    "wrench": "~1.5.8"
+    "glob": "^4.3.1",
+    "lodash": "^2.4.1",
+    "mysql": "^2.3.2",
+    "q": "^1.1.2"
   },
   "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-clean": "~0.6.0",
-    "grunt-contrib-jshint": "~0.10.0"
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-jshint": "^0.10.0"
+  },
+  "peerDependencies": {
+    "grunt": "^0.4.5"
   },
   "keywords": [
     "mysql",
