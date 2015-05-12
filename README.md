@@ -34,7 +34,7 @@ grunt.initConfig({
 		options: {
 			connection: {
 				host: 'example.com',
-				username: 'exampleuser',
+				user: 'exampleuser',
 				password: 'examplepassword',
 				database: 'exampledatabase',
 				multipleStatements: true
