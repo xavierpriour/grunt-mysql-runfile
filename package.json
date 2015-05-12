@@ -1,6 +1,6 @@
 {
   "name": "grunt-mysql-runfile",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Runs the given sql files on the mysql database.",
   "homepage": "https://github.com/Hiiragisan09/grunt-mysql-runfile",
   "author": {

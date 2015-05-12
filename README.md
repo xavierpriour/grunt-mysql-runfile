@@ -75,6 +75,7 @@ It runs the files in alphabetical order.
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+- v0.2.2 - fixed README example, improved connection error logging, cleaned up dependencies
 - v0.2.1 - Added README, fixed some minor bugs and added to wercker ci
 - v0.2.0 - Bug fix for running add unix environments.
 - v0.1.0 - Initial release.
